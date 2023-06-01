@@ -1,0 +1,202 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  background: hsl(234, 29%, 20%);
+  display: grid;
+  place-content: center;
+}
+
+.card-container {
+  background: #f1f1f1;
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.card-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 0rem 1rem;
+}
+.title-description {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-weight: bold;
+  font-size: 2.8rem;
+  padding-bottom: 1.5rem;
+}
+
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.item-checklist {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+.label > span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+}
+.label > input {
+  padding: 1rem;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 0.3rem;
+  color: #000;
+}
+.email.error{
+ border: 1px solid red;
+ background-color: #e96b6bc4;
+}
+.email.success{
+  border: 1px solid green;
+  background-color:rgb(118, 238, 172) ;
+ }
+.button-cont {
+  align-self: center;
+  padding: 0.3rem 1rem;
+  background-color: hsl(235, 18%, 26%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.button-cont > button {
+  color: white;
+  background-color: inherit;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+
+}
+
+.button-cont:hover{
+  background-color: hsl(4, 100%, 67%);
+  box-shadow: 2px 2px #aaaaaa48;
+  transition: all 500ms;
+}
+.img-cont > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.error{
+  color: red;
+}
+.success{
+  color: green;
+}
+
+
+
+
+
+
+.container-thx{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f1f1f1;
+  border-radius: 1rem;
+  margin: 1rem;
+  width: 90%;
+  max-width: 600px;
+}
+  
+.thx-title{
+  margin: 1rem 0rem;
+}
+.btn-thx{
+  margin: 1rem 0rem;
+  padding: 1rem 0rem;
+  width: 100%;
+  background-color: hsl(234, 29%, 20%);
+  outline: none;
+  border: none;
+  border-radius: .8rem;
+  color: #f1f1f1;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.btn-thx:hover{
+  background-color: hsl(4, 100%, 67%);
+  box-shadow: 2px 2px #aaaaaa48;
+  transition: all 500ms;
+
+}
+
+
+
+#userEmail{
+  font-weight: 700;
+}
+
+
+
+
+@media all and (max-width: 970px) {
+  .card-container {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+  .card-left {
+    padding: 0.5rem;
+    order: 55;
+    width: 100%;
+    padding: 1rem;
+  }
+  .title-description{
+    padding-bottom: 1.5rem;
+  }
+  .checklist{
+       padding-bottom: 1.5rem;
+  }
+  .item-checklist{
+    padding-bottom: 1rem;
+    
+  }
+  .card-right {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  .img-cont > img {
+    height: 50svh;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+}
